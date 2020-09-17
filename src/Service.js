@@ -24,13 +24,24 @@ class Service  {
     }
     // https://socialapp-api.herokuapp.com/messages?limit=100
 
-    userMessage() {
+    getMessage() {
         let endpoint = "/messages"
         let messageCount = 100
         let URL = this.domain + endpoint + "?limit=" + messageCount
         return fetch(URL)
             .then(response => response.json())
     }
+
+    // https://socialapp-api.herokuapp.com/messages
+
+    createMessage() {
+        let endpoint = "/messages"
+        let URL = this.domain + endpoint
+        return fetch(URL)
+            .then(response => response.json())
+    }
+
+
 
 }
 

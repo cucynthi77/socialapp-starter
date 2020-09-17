@@ -7,7 +7,7 @@ import Service from "../Service"
 
 
 import homelogo from "../images/logo.png"
-import { ItemGroup } from "semantic-ui-react";
+// import { ItemGroup } from "semantic-ui-react";
 
 class Home extends React.Component {
   constructor (props) {
@@ -15,7 +15,7 @@ class Home extends React.Component {
     this.client = new Service()
   }
   componentDidMount(){
-    this.client.userMessage() 
+    this.client.getMessage() 
   }
 
   render() {

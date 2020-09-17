@@ -13,7 +13,7 @@ class MessageFeed extends React.Component {
         }
     }
     componentDidMount() {
-        this.client.userMessage().then(messageData => {
+        this.client.getMessage().then(messageData => {
             this.setState({
                 messages: messageData.messages
             })
