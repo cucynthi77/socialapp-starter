@@ -95,7 +95,7 @@ class Profile extends React.Component {
         <Grid columns={2} divided>
     <Grid.Row>
       <Grid.Column Align='center'>
-      <Image src='https://images.pexels.com/photos/2846814/pexels-photo-2846814.jpeg?cs=srgb&dl=pexels-oziel-g%C3%B3mez-2846814.jpg&fm=jpg' size = 'small' />
+      <Image src />
       </Grid.Column>
       <Grid.Column>
                 <Segment>
@@ -129,14 +129,14 @@ class Profile extends React.Component {
       <Grid.Column>
       <Form onSubmit={this.handleUpdateUser}>
         <Form.Field>
-          <label htmlFor="displayName">Display Name</label>
+          {/* <label htmlFor="displayName">Display Name</label>
           <input
             type="text"
             name="displayName"
             autoFocus
             required
             onChange={this.handleChange}
-          />
+          /> */}
         </Form.Field>
 
 
@@ -198,8 +198,7 @@ class Profile extends React.Component {
     <Grid.Row>
       <Grid.Column>
               <Segment>
-                  UPLOAD IMAGE 
-                  CHANGE IMAGE  GOES HERE 
+                 
               </Segment>
       </Grid.Column>
       <Grid.Column>
@@ -233,13 +232,7 @@ class Profile extends React.Component {
 
        
 
-          <Button type="primary" onClick={this.handleUpdateUser}>
-            Update User
-          </Button>
-
-          <Button type="primary" onClick={this.handleDeleteUser}>
-            Delete User
-          </Button>
+          
         
 
         <Form>
