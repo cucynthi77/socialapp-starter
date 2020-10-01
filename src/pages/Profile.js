@@ -2,7 +2,7 @@ import React from "react";
 import Menu from "../components/menu/Menu";
 import { userIsAuthenticated } from "../redux/HOCs";
 import FetchService from "../FetchService"
-import { Card, CardContent, Icon, Image, Button, Form, Grid, Segment, Header, List, Link } from 'semantic-ui-react'
+import {  Image, Button, Form, Grid, Segment, Header, List} from 'semantic-ui-react'
 import { withAsyncAction } from "../redux/HOCs";
 import imageGatsby from "../images/gatsby.jpg"
 
@@ -104,8 +104,7 @@ class Profile extends React.Component {
         <Grid columns={2} divided>
     <Grid.Row>
       <Grid.Column Align='center'>
-      <Image src={'https://socialapp-api.herokuapp.com/users/' + this.state.user.username +"/picture" }/>
-      
+      <Image src={'https://socialapp-api.herokuapp.com' + this.state.user.pictureLocation }/>
       </Grid.Column>
       <Grid.Column>
                 <Segment>
@@ -169,6 +168,25 @@ class Profile extends React.Component {
             />
           </Form.Field>
 
+          <Button primary  onClick={this.handleUpdateUser}>
+            Update User
+          </Button>
+
+          <Button secondary  onClick={this.handleDeleteUser}>
+            Delete User
+          </Button>
+         
+            <Button type="primary" onClick={this.handleSubmitPhoto}>
+              Submit Photo
+            </Button>
+            <input
+              type="file"
+              name="picture"
+              required
+              onChange={this.onFileChange}
+            />
+         
+       
         </Form>
       </Grid.Column>
       <Grid.Column>
@@ -217,31 +235,8 @@ class Profile extends React.Component {
       
     </Grid.Row>
   </Grid>
-
-       
-
-          <Button primary onClick={this.handleUpdateUser}>
-            Update User
-          </Button>
-
-          <Button secondary onClick={this.handleDeleteUser}>
-            Delete User
-          </Button>
-
-        <Form>
-          <Form.Field>
-            <Button type="primary" onClick={this.handleSubmitPhoto}>
-              Submit Photo
-            </Button>
-            <input
-              type="file"
-              name="picture"
-              required
-              onChange={this.onFileChange}
-            />
-          </Form.Field>
-        </Form>
-      </div>
+           
+ </div>
     );
   }
 }
