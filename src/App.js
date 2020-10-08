@@ -45,3 +45,6 @@ class App extends React.Component {
   }
 }
 export default App;
+
+// PM: remove comments from line 13 to 16, fix formatting line 34 to 36
+// Overall project file structure: combine images and imagesProfile directories

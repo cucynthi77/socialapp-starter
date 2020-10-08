@@ -107,6 +107,7 @@ class FetchService {
             .then(response => response.json())
     }
 
+    // unused
     deleteMessage(messageId) {
         let endpoint = "/messages"
         let URL = this.domain + endpoint + messageId
@@ -151,3 +152,5 @@ class FetchService {
 
 }
 export default FetchService;
+
+// PM: Formatting, deleteUser endpoint is broken (missing space after bearer line 48)

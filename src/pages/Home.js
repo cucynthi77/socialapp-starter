@@ -69,3 +69,6 @@ class Home extends React.Component {
 }
 
 export default userIsNotAuthenticated(Home);
+
+// PM: remove unused imports line 10 & 11
+// fill out empty row starting on line 50 or remove it
