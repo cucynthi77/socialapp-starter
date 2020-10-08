@@ -141,3 +141,5 @@ class MessageFeed extends React.Component {
 }
 
 export default userIsAuthenticated(MessageFeed)
+
+// PM: This component is pretty straigthforward and well formatted, well done. Nice Popup component!

@@ -48,3 +48,5 @@ class Menu extends React.Component {
   }
 }
 export default withAsyncAction("auth", "logout")(Menu);
+
+// PM: Try using a menu from your component library instead of a div for this menu.

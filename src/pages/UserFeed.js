@@ -35,3 +35,6 @@ class UserFeed extends React.Component {
     }
 }
 export default userIsAuthenticated(UserFeed)
+
+// PM: nice start here, just needs a bit more styling. 
+// Could possibly combine this page with message feed.

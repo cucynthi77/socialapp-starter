@@ -243,3 +243,7 @@ class Profile extends React.Component {
 
 
 export default withAsyncAction("auth", "logout")(userIsAuthenticated(Profile));
+
+// PM: Formatting, handleDelete is not currently functioning. needs to be fixed in fetch service
+// the initial state on line 23 to 29: instead of setting things to "null", instead set them to null
+// because "null" is a string whereas null is a special empty value in JS

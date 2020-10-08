@@ -37,3 +37,5 @@ function UserItem(props) {
     )
 }
 export default UserItem
+
+// PM: Formatting, image is broken when user does not have an image. Think about adding a placeholder
